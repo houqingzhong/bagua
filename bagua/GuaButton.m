@@ -18,7 +18,7 @@
 {
     self.gua = gua;
     if (gua[@"icon"]) {
-        [self setImage:[UIImage imageNamed:gua[@"icon"]] forState:UIControlStateNormal];
+        [self setBackgroundImage:[UIImage imageNamed:gua[@"icon"]] forState:UIControlStateNormal];
     }
 }
 
