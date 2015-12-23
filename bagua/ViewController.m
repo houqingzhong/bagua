@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PingBaGua.h"
+#import "GuaButton2.h"
 
 @interface ViewController ()
 {
@@ -36,6 +37,9 @@
     _pinBaGua = [[PingBaGua alloc] initWithFrame:self.view.bounds];
     [_pinBaGua setData:_bagatu];
     [self.view addSubview:_pinBaGua];
+    
+    
+    
     
 }
 

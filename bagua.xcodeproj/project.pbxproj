@@ -15,6 +15,7 @@
 		1DEAFEF41C2AB94E00461A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAFEF21C2AB94E00461A92 /* LaunchScreen.storyboard */; };
 		1DEAFEFD1C2AB98800461A92 /* PingBaGua.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAFEFC1C2AB98800461A92 /* PingBaGua.m */; };
 		1DEAFF001C2AC03F00461A92 /* GuaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAFEFF1C2AC03F00461A92 /* GuaButton.m */; };
+		1DEAFF051C2ADAEA00461A92 /* GuaButton2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAFF041C2ADAEA00461A92 /* GuaButton2.m */; };
 		391DBB0E48193CA0591D87AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FC0B2C6B5438B34E979F45 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,8 @@
 		1DEAFEFE1C2AC03F00461A92 /* GuaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuaButton.h; sourceTree = "<group>"; };
 		1DEAFEFF1C2AC03F00461A92 /* GuaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuaButton.m; sourceTree = "<group>"; };
 		1DEAFF021C2AC83700461A92 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		1DEAFF031C2ADAEA00461A92 /* GuaButton2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuaButton2.h; sourceTree = "<group>"; };
+		1DEAFF041C2ADAEA00461A92 /* GuaButton2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuaButton2.m; sourceTree = "<group>"; };
 		52FC0B2C6B5438B34E979F45 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F52F04FAB1E2B7891575F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AE6EFE73DB76AFA6C8FAE48E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				1DEAFEEB1C2AB94E00461A92 /* ViewController.m */,
 				1DEAFEFB1C2AB98800461A92 /* PingBaGua.h */,
 				1DEAFEFC1C2AB98800461A92 /* PingBaGua.m */,
+				1DEAFF031C2ADAEA00461A92 /* GuaButton2.h */,
+				1DEAFF041C2ADAEA00461A92 /* GuaButton2.m */,
 				1DEAFEED1C2AB94E00461A92 /* Main.storyboard */,
 				1DEAFEF01C2AB94E00461A92 /* Assets.xcassets */,
 				1DEAFEF21C2AB94E00461A92 /* LaunchScreen.storyboard */,
@@ -222,6 +227,7 @@
 			files = (
 				1DEAFF001C2AC03F00461A92 /* GuaButton.m in Sources */,
 				1DEAFEFD1C2AB98800461A92 /* PingBaGua.m in Sources */,
+				1DEAFF051C2ADAEA00461A92 /* GuaButton2.m in Sources */,
 				1DEAFEEC1C2AB94E00461A92 /* ViewController.m in Sources */,
 				1DEAFEE91C2AB94E00461A92 /* AppDelegate.m in Sources */,
 				1DEAFEE61C2AB94E00461A92 /* main.m in Sources */,
