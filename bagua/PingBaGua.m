@@ -67,6 +67,7 @@
     CGFloat margin_top = 20;
     CGFloat width = (ScreenSize.width-5*margin_left)/4;
     CGFloat height = width;
+    UIView *lastView = nil;
     for (int i = 0; i< _gua_arr.count; i++) {
         CGFloat top = 0;
         top = i/4 == 0 ? 20 : 2*margin_top+ height;
@@ -74,7 +75,15 @@
         GuaButton *btn = [self viewWithTag:1000+i];
         NSLog(@"%f %f %f %@", left, top, height, _gua_arr[i][@"title"]);
         [btn anchorTopLeftWithLeftPadding:left topPadding:top width:width height:height];
+        
+        lastView = btn;
     }
+    
+    for (int i = 0; i< _gua_arr2.count; i++) {
+        GuaButton2 *btn = [self viewWithTag:2000+i];
+        [self addSubview:btn];
+    }
+    
 }
 
 @end

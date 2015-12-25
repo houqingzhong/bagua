@@ -7,12 +7,16 @@
 //
 
 #import "GuaButton2.h"
-#import "GuaButton2.h"
+#import "GuaButton.h"
+#import "Constant.h"
+#import "UIView+Facade.h"
 
 @interface GuaButton2()
 {
-    GuaButton2 *_btn1;
-    GuaButton2 *_btn2;
+    UIImageView *_gua1;
+    UIImageView *_gua2;
+    
+    UILabel *_titleLabel;
 }
 @end
 
@@ -22,11 +26,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _btn1 = [GuaButton2 new];
-        _btn2 = [GuaButton2 new];
         
-        [self addSubview:_btn1];
-        [self addSubview:_btn2];
+        _titleLabel = [UILabel new];
+        _gua1 = [UIImageView new];
+        _gua2 = [UIImageView new];
+        
+        [self addSubview:_gua2];
+        [self addSubview:_gua2];
+        [self addSubview:_titleLabel];
     }
     
     return self;
@@ -34,11 +41,32 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
+    
+    [_gua1 anchorTopCenterFillingWidthWithLeftAndRightPadding:0 topPadding:0 height:ScreenSize.width/5];
+    [_gua2 alignUnder:_gua1 centeredFillingWidthWithLeftAndRightPadding:0 topPadding:10*XA height:ScreenSize.width/5];
+    
+    [_titleLabel anchorBottomCenterFillingWidthWithLeftAndRightPadding:0 bottomPadding:0 height:20*XA];
+    
 }
 
 - (void)setData:(NSDictionary*)data
 {
-
+  
     [self setNeedsLayout];
+}
+
+
+- (void)setUp:(UIImage *)upImage
+{
+    if (upImage) {
+        _gua1.image = upImage;
+    }
+}
+
+- (void)setDown:(UIImage *)downImage
+{
+    if (downImage) {
+        _gua2.image = downImage;
+    }
 }
 @end
