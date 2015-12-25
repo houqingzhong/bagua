@@ -7,13 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "PingBaGua.h"
-#import "GuaButton2.h"
+#import "PingBaGuaViewController.h"
 
 @interface ViewController ()
 {
-    PingBaGua *_pinBaGua;
-    NSArray *_bagatu;
 }
 @end
 
@@ -22,31 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    _bagatu = @[
-                @{@"title":@"乾", @"icon":@"qian"},
-                @{@"title":@"兑", @"icon":@"dui"},
-                @{@"title":@"离", @"icon":@"li"},
-                @{@"title":@"震", @"icon":@"zhen"},
-                @{@"title":@"巽", @"icon":@"xun"},
-                @{@"title":@"坎", @"icon":@"kan"},
-                @{@"title":@"艮", @"icon":@"gen"},
-                @{@"title":@"坤", @"icon":@"kun"},
-                ];
-
-    _pinBaGua = [[PingBaGua alloc] initWithFrame:self.view.bounds];
-    [_pinBaGua setData:_bagatu];
-    [self.view addSubview:_pinBaGua];
-    
-    
-    
-    
-}
-
--(void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-    
+    [self presentViewController:[PingBaGuaViewController new] animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

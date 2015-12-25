@@ -10,7 +10,6 @@
 
 @interface GuaButton2 : UIControl
 
-- (void)setData1:(NSDictionary*)data1;
-- (void)setData2:(NSDictionary*)data2;
+- (void)setData:(NSDictionary*)data;
 
 @end

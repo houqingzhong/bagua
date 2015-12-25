@@ -10,6 +10,4 @@
 
 @interface PingBaGua : UIView
 
--(void)setData:(NSArray *)data;
-
 @end

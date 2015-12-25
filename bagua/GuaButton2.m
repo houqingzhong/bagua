@@ -36,13 +36,7 @@
     [super layoutSubviews];
 }
 
-- (void)setData1:(NSDictionary*)data1
-{
-    
-    [self setNeedsLayout];
-}
-
-- (void)setData2:(NSDictionary*)data2
+- (void)setData:(NSDictionary*)data
 {
 
     [self setNeedsLayout];
